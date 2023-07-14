@@ -1,0 +1,145 @@
+/* Primary styles */
+body {
+    font-family: 'Work Sans', sans-serif;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.primary-heading {
+    text-align: center;
+
+}
+
+.heading-title {
+    font-size: 30px;
+    color: #66694F;
+}
+
+.heading-description {
+    color: #66694F;
+    font-size: 15px;
+
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    background-color: #66694F;
+    padding: 5px 8px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.price {
+    color: black;
+    font-weight: bold;
+
+}
+
+span {
+    color: orange;
+}
+
+/* Navbar Styles */
+.banner-section {
+    display: flex;
+    background-color: floralwhite;
+}
+
+.banner-section .banner {
+    width: 50%;
+}
+
+.banner-section img {
+    width: 100%;
+}
+
+.banner-content {
+    margin-top: 12%;
+    padding-left: 10%;
+}
+
+.banner-title {
+    font-size: 3em;
+    color: #66694F;
+}
+
+.banner-description {
+    color: #66694F;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+/* Responsive styles for Navbar */
+/* For Small Devices */
+@media screen and (max-width:576px) {
+    .banner-section {
+        flex-direction: column-reverse;
+    }
+
+    .banner-section .banner {
+        width: 100%;
+    }
+}
+
+/* For Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .banner-section {
+        flex-direction: column;
+    }
+
+    .banner-section .banner {
+        width: 100%;
+    }
+}
+
+/* Main Sections Styles */
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 5%;
+}
+
+.item {
+    text-align: center;
+}
+
+.product-container img {
+    width: 100%;
+    height: 70%;
+}
+
+/* Responsive Styles for Main Section */
+/* For Small Devices */
+@media screen and (max-width:576px) {
+    .product-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* For Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .product-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #66694F;
+    margin-top: 100px;
+    padding: 80px 0px;
+}
+
+.foot-title {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.foot-description {
+    text-align: center;
+    color: white;
+}
